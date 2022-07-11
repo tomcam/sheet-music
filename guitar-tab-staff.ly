@@ -8,12 +8,12 @@
      \clef "treble_8"
      \time c
      \key g \major
-     g,8-3 a b c d e fis g
+     g,8-3 a-5 b c d e fis g
      %\override Fingering.direction = #DOWN
    }
-   \new TabStaff \relative {
-     g8 a b c d e fis g
+   \new TabStaff \with { stringTunings = #guitar-tuning } \relative {
+     g8,\6 a\6 b c d e fis g
      %\set TabStaff.minimumFret = #5
-     \set TabStaff.restrainOpenStrings = ##t
+     %\set TabStaff.restrainOpenStrings = ##t
    }
 >>
